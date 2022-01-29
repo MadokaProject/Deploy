@@ -1,4 +1,4 @@
-FROM openjdk:11-jre
+FROM openjdk:16-jre
 
 LABEL org.opencontainers.image.authors="colsrch"
 
