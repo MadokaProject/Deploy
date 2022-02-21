@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM ibm-semeru-runtimes:open-17.0.2_8-jre-focal
 
 LABEL org.opencontainers.image.authors="colsrch"
 
