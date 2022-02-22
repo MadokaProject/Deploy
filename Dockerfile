@@ -1,4 +1,4 @@
-FROM centos:8
+FROM rockylinux:8.5
 
 LABEL org.opencontainers.image.authors="colsrch"
 
