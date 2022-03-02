@@ -10,7 +10,6 @@ ENV LANG C.UTF-8
 WORKDIR /app
 
 RUN yum install -y git python38 python38-pip wget && \
-    yum groupinstall Fonts -y && \
     wget https://raw.githubusercontent.com/MadokaProject/Madoka/release/requirements.txt -P /root/ && \
     pip3 install -r /root/requirements.txt -r /root/local_requirements.txt
 
