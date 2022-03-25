@@ -10,4 +10,4 @@ ADD ./mcl/ .
 
 RUN chmod +x mcl
 
-ENTRYPOINT ["./mcl"]
+CMD ["./mcl"]
