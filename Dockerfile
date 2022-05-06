@@ -10,6 +10,8 @@ ENV LANG C.UTF-8
 
 WORKDIR /app
 
-RUN pip install -r /root/requirements.txt -r /root/local_requirements.txt
+RUN apt-get update && apt-get install git -y && \
+    apt-get autoclean && rm -rf /var/lib/apt/lists/* && \
+    pip install -r /root/requirements.txt -r /root/local_requirements.txt
 
 CMD ["/bin/bash", "-c", "python main.py"]
