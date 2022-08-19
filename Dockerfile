@@ -12,6 +12,7 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install git -y && \
     apt-get autoclean && rm -rf /var/lib/apt/lists/* && \
-    pip install -r /root/requirements.txt -r /root/local_requirements.txt
+    pip install -r /root/requirements.txt -r /root/local_requirements.txt && \
+    pip install pymysql pysqlite3
 
 CMD ["/bin/bash", "-c", "python main.py"]
