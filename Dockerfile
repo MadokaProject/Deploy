@@ -17,8 +17,8 @@ ENV PYTHONPATH=/app/pkgs
 WORKDIR /app
 COPY --from=builder /build/__pypackages__/3.9/lib /app/pkgs
 
-RUN pip config set install.prefix /app/user_pkgs && \
-    echo "/app/user_pkgs/lib/python3.9/site-packages" > /usr/local/lib/python3.9/site-packages/user_pkgs.pth && \
+RUN pip config set install.prefix /user_pkgs && \
+    echo "/user_pkgs/lib/python3.9/site-packages" > /usr/local/lib/python3.9/site-packages/user_pkgs.pth && \
     apt-get update && apt-get install git -y && \
     apt-get autoclean && rm -rf /var/lib/apt/lists/*
 
