@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: colsrch/madoka:own
+          tags: colsrch/madoka:only_pkgs
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
   mcl:
