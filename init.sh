@@ -1,6 +1,6 @@
 #!/bin/bash
 mcl_releases="2.1.2"
-mah_releases="2.6.2"
+mah_releases="2.7.1-publish1"
 wget https://github.com/iTXTech/mirai-console-loader/releases/download/v$mcl_releases/mcl-$mcl_releases.zip
 unzip mcl-$mcl_releases.zip -d ./mcl
 chmod +x ./mcl/mcl
