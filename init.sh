@@ -5,6 +5,7 @@ wget https://github.com/iTXTech/mirai-console-loader/releases/download/v$mcl_rel
 unzip mcl-$mcl_releases.zip -d ./mcl
 chmod +x ./mcl/mcl
 wget https://github.com/project-mirai/mirai-api-http/releases/download/v$mah_releases/mirai-api-http-$mah_releases.mirai2.jar -P ./mcl/plugins
+wget https://github.com/cssxsh/fix-protocol-version/releases/download/v1.0.0/fix-protocol-version-1.0.0.mirai2.jar -P ./mcl/plugins
 cd ./mcl && ./mcl &
 sleep 150
 kill %1
